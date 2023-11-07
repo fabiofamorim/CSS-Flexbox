@@ -1,0 +1,32 @@
+@charset 'UTF-8';
+
+.container {
+    background-color: lightgrey;
+    height: 500px;
+
+    display: flex;
+    flex-direction: row; /*Define a direção dos itens*/
+    /*row, column, row-reverse, column-reverse*/
+
+    flex-wrap: wrap; /*Define se os itens terão uma quebra de lina ou não*/
+    /*wrap, no-wrap, wrap-reverse*/
+
+   /* flex-flow: row nowrap;/*Forma resumida do flex-direction e wrap*/    */
+
+    justify-content: flex-start;/*Alinhamento horizontal*/
+    /*flex-start, flex-end, center, space-between, space-around*/
+    
+    align-items: stretch; /*Alinhamento vertical*/
+    /*flex-start, flex-end, center, baseline e stretch*/
+
+    align-content: stretch;/*Alinhamento vertical quando os itens possuem uma quebra*/
+    /*flex-start, flex-end, center, space-between, space-around*/
+}  
+.item {
+    background-color: gray;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    width: 200px;
+
+}  
