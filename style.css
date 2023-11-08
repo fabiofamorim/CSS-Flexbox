@@ -8,7 +8,7 @@
     flex-direction: row; /*Define a direção dos itens*/
     /*row, column, row-reverse, column-reverse*/
 
-    flex-wrap: wrap; /*Define se os itens terão uma quebra de lina ou não*/
+    flex-wrap: nowrap; /*Define se os itens terão uma quebra de lina ou não*/
     /*wrap, no-wrap, wrap-reverse*/
 
    /* flex-flow: row nowrap;/*Forma resumida do flex-direction e wrap*/    */
@@ -19,7 +19,7 @@
     align-items: stretch; /*Alinhamento vertical*/
     /*flex-start, flex-end, center, baseline e stretch*/
 
-    align-content: stretch;/*Alinhamento vertical quando os itens possuem uma quebra*/
+    align-content: ;/*Alinhamento vertical quando os itens possuem uma quebra*/
     /*flex-start, flex-end, center, space-between, space-around*/
 }  
 .item {
@@ -27,6 +27,18 @@
     color: white;
     padding: 20px;
     margin: 5px;
-    width: 200px;
+
+    height: 30px;
+
+    /*flex-grow: 1; padrão = 0. Está relacionado com a largura dos itens
+    flex-basis: 300px;  Largura inicial dos itens 
+    flex-shrink: 1; Relacionado com a capacidade de redução do item */
+    
+    flex: 1 1 300px; /*Forma resumida do flex-grow, flex-basis e flex-shrink*/
 
 }  
+.article-01 {flex-shrink: 3;}
+.article-02 {}
+.article-03 { }
+.article-04 { }
+/*align-self padrão é auto, mas temos o center, flex-start, flex-end, baseline e o stretch. Caso não consiga fazer o align- self, retire o align content*/
